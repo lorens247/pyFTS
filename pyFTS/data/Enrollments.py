@@ -14,7 +14,7 @@ def get_data():
     :return: numpy array
     """
     dat = get_dataframe()
-    dat = np.array(dat["population"])
+    dat = np.array(dat["Enrollments"])
     return dat
 
 
