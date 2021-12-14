@@ -14,12 +14,12 @@ def get_data():
     :return: numpy array
     """
     dat = get_dataframe()
-    dat = np.array(dat["Enrollment"])
+    dat = np.array(dat["population"])
     return dat
 
 
 def get_dataframe():
     dat = common.get_dataframe('population.csv',
-                               'data/population2006-2015.csv',
+                               'data/population.csv',
                                sep=";")
     return dat
