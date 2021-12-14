@@ -14,12 +14,12 @@ def get_data():
     :return: numpy array
     """
     dat = get_dataframe()
-    dat = np.array(dat["Enrollments"])
+    dat = np.array(dat["population"])
     return dat
 
 
 def get_dataframe():
-    dat = common.get_dataframe('Enrollments.csv',
-                               'https://github.com/petroniocandido/pyFTS/raw/8f20f3634aa6a8f58083bdcd1bbf93795e6ed767/pyFTS/data/Enrollments.csv',
+    dat = common.get_dataframe('population.csv',
+                               'data/population2006-2015.csv',
                                sep=";")
     return dat
