@@ -20,6 +20,6 @@ def get_data():
 
 def get_dataframe():
     dat = common.get_dataframe('population.csv',
-                               'data/population.csv',
+                               '',
                                sep=";")
     return dat
