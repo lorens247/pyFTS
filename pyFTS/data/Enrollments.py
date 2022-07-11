@@ -20,6 +20,6 @@ def get_data():
 
 def get_dataframe():
     dat = common.get_dataframe('population.csv',
-                               '',
+                               'https://raw.githubusercontent.com/lorens247/pyFTS/master/pyFTS/data/Enrollments.csv',
                                sep=";")
     return dat
