@@ -1,5 +1,5 @@
 """
-Yearly University of Alabama enrollments from 1971 to 1992.
+Yearly 
 """
 
 from pyFTS.data import common
@@ -19,7 +19,7 @@ def get_data():
 
 
 def get_dataframe():
-    dat = common.get_dataframe('population.csv',
+    dat = common.get_dataframe('Enrollments.csv',
                                'https://raw.githubusercontent.com/lorens247/pyFTS/master/pyFTS/data/Enrollments.csv',
                                sep=";")
     return dat
